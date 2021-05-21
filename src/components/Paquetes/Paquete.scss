@@ -1,0 +1,178 @@
+$pink: #ca16a3;
+.Paquete {
+  max-width: 100%;
+  padding: 7rem 2rem 2rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  .wrapperInfo {
+    .title {
+      margin-bottom: 1rem;
+    }
+    .wrapperDescription {
+      margin: 1rem 0;
+      .description {
+        line-height: 1.5rem;
+      }
+    }
+    .wrapperList {
+      line-height: 1.3rem;
+      margin: 0.5rem 0 1rem 0;
+    }
+    .wrapperQuestion {
+      margin: 1rem 0;
+    }
+    .wrapperPrecio {
+      margin: 1rem 0;
+      .precio {
+        font-size: 1.6rem;
+        .tagPrecio {
+          font-style: italic;
+          color: $pink;
+        }
+      }
+    }
+  }
+  .wrapperImg {
+    width: 100%;
+    .imgPromo {
+      width: 100%;
+      border-radius: 0.9rem;
+      box-shadow: 0 8px 8px -6px rgba($color: $pink, $alpha: 0.5);
+    }
+  }
+  .titlelist {
+    font-size: 1.2rem;
+    color: $pink;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  @media (min-width: 1200px) {
+    max-width: 90rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .wrapperInfo {
+      width: 35rem;
+      margin-right: 5rem;
+      box-sizing: border-box;
+    }
+    .wrapperImg {
+      width: 40rem;
+    }
+  }
+}
+.wrapperPaquetes {
+  margin: 3rem 0;
+  .wrapperCards {
+    max-width: 100%;
+    margin: 3rem 0;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    .wrapperCard {
+      width: 100%;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      &:not(:last-of-type) {
+        margin: 1rem 0;
+      }
+      .Card {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        .WrapperImg {
+          width: 7rem;
+          height: 7rem;
+          padding: 0.3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 2px dotted $pink;
+          border-radius: 50%;
+          box-sizing: border-box;
+          .img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+        }
+        .WrapperInformation {
+          width: 10.5rem;
+          .InfoPaquete {
+            .paqueteTitulo {
+              font-size: 0.95rem;
+              margin-bottom: 0.5rem;
+              font-weight: 400;
+            }
+            .slug {
+              font-size: 0.8rem;
+              font-weight: 300;
+              margin-bottom: 0.5rem;
+              color: $pink;
+            }
+          }
+          .wrapperPrecio {
+            .Precio {
+              font-size: 1.1rem;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .WrapperButton {
+        width: 100%;
+        display: flex;
+        margin: 1rem 0;
+        box-sizing: border-box;
+        .LinkButton {
+          width: 100%;
+          padding: 0.5rem 1rem;
+          background-color: $pink;
+          color: white;
+          text-align: center;
+          box-sizing: border-box;
+          border-radius: 2rem;
+          text-decoration: none;
+          &:hover {
+            background-color: #940b76;
+          }
+        }
+      }
+    }
+    @media (min-width: 1200px) {
+      max-width: 90rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      .wrapperCard {
+        width: 33%;
+        .Card {
+          .WrapperImg {
+            width: 11rem;
+            height: 11rem;
+          }
+          .WrapperInformation {
+            width: 13.5rem;
+            .InfoPaquete {
+              .paqueteTitulo {
+                font-size: 1.1rem;
+              }
+              .slug {
+                font-size: 0.9rem;
+              }
+            }
+            .wrapperPrecio {
+              .Precio {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

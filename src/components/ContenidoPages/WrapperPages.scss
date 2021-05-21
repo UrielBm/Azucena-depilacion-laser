@@ -1,0 +1,46 @@
+$pink: #ca16a3;
+.wrapperPage {
+  margin: 1.5rem 0;
+  font-family: "Poppins", sans-serif;
+  .wrapperBlogs {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .titlePage {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 1rem;
+    box-sizing: border-box;
+  }
+  .wrapperInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    font-weight: 300;
+    box-sizing: border-box;
+
+    .img {
+      width: 100%;
+      border-radius: 0.9rem;
+      box-shadow: 0 8px 8px -6px rgba($color: $pink, $alpha: 0.5);
+    }
+    @media (min-width: 1200px) {
+      max-width: 90rem;
+      margin: 0 auto;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .wrapperDescription {
+        width: 35rem;
+      }
+      .img {
+        width: 45rem;
+      }
+    }
+  }
+}

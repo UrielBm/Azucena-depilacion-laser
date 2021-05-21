@@ -1,0 +1,66 @@
+$white: #f6f6f6;
+$pink: #ca16a3;
+$black: #140912;
+.wrapperHeader {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0rem;
+  box-sizing: border-box;
+  background-color: $white;
+  z-index: 2;
+  .wrapperLogo {
+    display: flex;
+    .logo {
+      width: 4rem;
+    }
+  }
+  .wrapperTitle {
+    display: none;
+  }
+  .wrapperMenu {
+    .HamburgerMenu {
+      display: block;
+    }
+    .wrapperNav {
+      display: none;
+    }
+  }
+  .wrapperContact {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapperHeader {
+    justify-content: space-around;
+    .wrapperLogo {
+      .logo {
+        width: 5rem;
+      }
+    }
+    .wrapperTitle {
+      display: block;
+    }
+    .wrapperMenu {
+      .HamburgerMenu {
+        display: none;
+      }
+      .wrapperNav {
+        display: block;
+      }
+    }
+    .wrapperContact {
+      display: flex;
+      .title {
+        font-size: 1rem;
+        color: $black;
+        font-weight: 400;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

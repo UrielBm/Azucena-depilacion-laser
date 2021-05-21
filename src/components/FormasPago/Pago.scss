@@ -1,0 +1,41 @@
+.wrapperFormas {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  .wrapperMetodos {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 0 0;
+    box-sizing: border-box;
+    .Method {
+      text-align: center;
+      margin-bottom: 1rem;
+      .iconMethod {
+        width: 3rem;
+      }
+      .textMetod {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.2rem;
+        color: gray;
+        margin: 1rem 0 0 0;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .wrapperMetodos {
+      flex-direction: row;
+      .Method {
+        margin-bottom: 0;
+        .iconMethod {
+          width: 5rem;
+        }
+        .textMetod {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}

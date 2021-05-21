@@ -1,0 +1,13 @@
+$pinkwhite: #fdaffd;
+.wrapperFooter {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  background: $pinkwhite;
+  padding: 1rem 0;
+  box-sizing: border-box;
+  .wrapperSocialNetworks {
+    margin: 0.5rem auto;
+    width: 340px;
+  }
+}

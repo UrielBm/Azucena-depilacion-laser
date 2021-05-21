@@ -1,0 +1,75 @@
+$white: #f6f6f6;
+$pink: #ca16a3;
+$black: #140912;
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: $pink;
+}
+.link {
+  text-decoration: underline;
+  font-size: 1.2rem;
+  color: $pink;
+  font-weight: 100;
+}
+.actionButton {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: #eb18bd;
+  text-decoration: underline;
+  &:hover {
+    color: $pink;
+  }
+}
+.listQuestion {
+  margin: 1rem 0;
+  line-height: 1.3rem;
+  .question {
+    font-size: 0.9rem;
+    color: $pink;
+    font-weight: 400;
+  }
+  .answer {
+    font-size: 0.8rem;
+    color: $black;
+    font-weight: 300;
+  }
+}
+.wrapperContact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0;
+  .wrapperLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+    .text {
+      margin-left: 0.3rem;
+      color: $pink;
+    }
+  }
+}
+.wrapperDescription {
+  width: 100%;
+  margin: 2rem 0;
+  box-sizing: border-box;
+  .description {
+    text-align: start;
+    .parrafo {
+      line-height: 1.5;
+    }
+    .titleData {
+      text-align: start;
+      margin: 0.5rem 0;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $pink;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+$white: #f6f6f6;
+$pink: #ca16a3;
+$black: #140912;
+.previewBlog {
+  max-width: 100%;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  .titleBlog {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: $pink;
+  }
+  .wrapperInfoAutor {
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .wrapperPreviewContent {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 8.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+  }
+  .wrapperLink {
+    margin-bottom: 1rem;
+    .LinkButton {
+      color: $pink;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+  }
+  .wrapperPreviewImg {
+    width: 100%;
+    .PreviewImg {
+      margin: 0 auto;
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      box-shadow: 0 8px 8px -3px rgba($color: $pink, $alpha: 0.5);
+    }
+  }
+  @media (min-width: 1200px) {
+    max-width: 60rem;
+  }
+}
+.article {
+  max-width: 100%;
+  padding: 7rem 2rem 2rem 2rem;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  .wrapperGeneralArticle {
+    .articleTitle {
+      text-align: center;
+      font-size: 1.6rem;
+      color: $pink;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .wrapperInfoArticle {
+      p {
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 300;
+        .Autor {
+          font-size: 1.2rem;
+          color: $black;
+          font-weight: 400;
+        }
+        .publicado {
+          font-size: 1.2rem;
+          color: $black;
+          font-weight: 400;
+        }
+      }
+    }
+    .wrapperContenido {
+      font-size: 0.9rem;
+    }
+  }
+  .wrapperImg {
+    width: 100%;
+    .img {
+      width: 100%;
+      border-radius: 0.9rem;
+      box-shadow: 0 8px 8px -6px rgba($color: $pink, $alpha: 0.5);
+    }
+  }
+  @media (min-width: 1200px) {
+    max-width: 90rem;
+    display: flex;
+    justify-content: space-between;
+    .wrapperGeneralArticle {
+      width: 40rem;
+    }
+    .wrapperImg {
+      width: 35rem;
+    }
+  }
+}
