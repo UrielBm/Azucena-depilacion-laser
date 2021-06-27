@@ -2,8 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import Content from "../General/Content"
-import "./WrapperPages.scss"
 import Links from "../General/Links"
+import "./WrapperPages.scss"
 const WrapperUbicacion = () => {
   const Ubicacion = useStaticQuery(graphql`
     query {

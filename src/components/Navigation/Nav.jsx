@@ -13,6 +13,9 @@ const Nav = () => {
       <Link to={"/tecnologia"} className="link" activeClassName="activePage">
         Tecnología
       </Link>
+      <Link to={"/nutricion"} className="link" activeClassName = "activePage">
+        Nutrición
+        </Link>
       <Link to={"/ubicacion"} className="link" activeClassName="activePage">
         Ubicación
       </Link>

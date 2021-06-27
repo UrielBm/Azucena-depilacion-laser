@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import Layout from "../Layout"
 import Content from "../General/Content"
 import Image from "gatsby-image"
-import "./Blog.scss"
 export const query = graphql`
   query($slug: String!) {
     allDatoCmsArticulo(filter: { slug: { eq: $slug } }) {

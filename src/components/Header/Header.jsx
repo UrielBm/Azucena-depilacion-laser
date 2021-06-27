@@ -1,12 +1,12 @@
 import React, { useState } from "react"
-import { Sling as Hamburger } from "hamburger-react"
-import Title from "../General/Title"
-import "./Header.scss"
 import Nav from "../Navigation/Nav"
 import Logo from "../../images/logo.png"
 import NavPhone from "../Navigation/NavPhone"
 import Contact from "../General/Contact"
 import { Link } from "gatsby"
+import Horario from "../General/Horario"
+import { Sling as Hamburger } from "hamburger-react"
+import "./Header.scss"
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
   return (
@@ -16,9 +16,6 @@ const Header = () => {
           <Link to="/">
             <img src={Logo} className="logo" alt="logo" />
           </Link>
-        </div>
-        <div className="wrapperTitle">
-          <Title title="Azucena clínica láser" />
         </div>
         <div className="wrapperMenu">
           <section className="HamburgerMenu">
@@ -34,6 +31,10 @@ const Header = () => {
             <Nav />
           </section>
         </div>
+        <section className="wrapperHorario">
+          <p className="title">Horario:</p>
+          <Horario />
+        </section>
         <section className="wrapperContact">
           <p className="title">Contactame:</p>
           <Contact />

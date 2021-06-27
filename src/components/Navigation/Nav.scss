@@ -32,6 +32,20 @@ $black: #140912;
     font-size: 1.2rem;
     border-bottom: 1px solid $pinkwhite;
   }
+  .Horarios{
+    h3{
+      color: $pink;
+      font-weight: 700;
+    }
+    .horarioSemana{
+      text-align: center;
+      margin: 1rem 0;
+    }
+    .horarioFinSemana{
+      text-align: center;
+    }
+   }
+ 
 }
 .wrapperNav {
   display: flex;
