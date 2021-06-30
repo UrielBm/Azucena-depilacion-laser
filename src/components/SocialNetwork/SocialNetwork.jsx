@@ -13,14 +13,14 @@ const SocialNetwork = () => {
         <img src={facebook} className="icon" alt="Facebook" />
       </a>
       <a
-        href="https://www.instagram.com/azucenaclinicalaser/"
+        href="https://www.instagram.com/azucena.clinicalaser/"
         target="_blank"
         rel="noreferrer"
       >
         <img src={instagram} className="icon" alt="Intagram" />
       </a>
       <a
-        href="https://twitter.com/AzucenaClinica"
+        href="https://twitter.com/ClinicaAzucena"
         target="_blank"
         rel="noreferrer"
       >
